@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-This script encompasses a function that both 
+This script encompasses a function that both
 prints and returns the last digit of a number.
 '''
 
