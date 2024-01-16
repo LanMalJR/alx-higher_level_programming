@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-This script prints a random number and indicates 
+This script prints a random number and indicates
 whether it's positive, negative, or zero.
 '''
 import random
