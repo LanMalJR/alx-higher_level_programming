@@ -4,6 +4,7 @@ This script includes a function that
 outputs a string in uppercase.
 '''
 
+
 def uppercase(str):
     newStr = ''
 
