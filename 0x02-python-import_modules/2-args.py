@@ -5,7 +5,7 @@ The script displays both the count and the list of its arguments.
 import sys
 
 
-ef main():
+def main():
     arguments = sys.argv
     length = len(arguments) - 1
 
