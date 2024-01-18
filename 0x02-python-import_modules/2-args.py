@@ -1,6 +1,8 @@
 !/usr/bin/python3
+
 '''
-The script displays both the count and the list of its arguments.
+The script displays both the count
+and the list of its arguments.
 '''
 import sys
 
