@@ -4,8 +4,9 @@ Displays the integers of a list in reverse order.
 '''
 
 
-def print_reversed_list_integer(my_list=[]):
-    length = (len(my_list) * -1) - 1
+def print_reversed_list_integer(my_list=None):
+    if my_list is None:
+        my_list = []
 
-    for i in range(-1, length, -1):
-        print('{:d}'.format(my_list[i]))
+    for i in reversed(my_list):
+        print("{:d}".format(i))
