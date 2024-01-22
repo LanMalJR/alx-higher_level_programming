@@ -6,13 +6,11 @@ each integer in the input is even.
 
 
 def divisible_by_2(my_list=[]):
-    return [True if num % 2 == 0 else False for num in my_list]
-
-
-'''
-Print the results
-'''
-for i in range(len(list_result)):
-    print("{:d} {} divisible by 2".format(my_list[i], "is" if list_result[i] else "is not"))
-
+    new_list = []
+    for i in range(len(my_list)):
+        if my_list[i] % 2 == 0:
+            new_list.append(True)
+        else:
+            new_list.append(False)
+    return new_list
 
