@@ -4,8 +4,8 @@ Displays a matrix containing integers.
 '''
 
 
-def print_matrix(matrix=None):
-    if matrix is None:
+def print_matrix_integer(matrix=[[]]):
+    if matrix is None or not matrix:
         matrix = [[]]
 
     for row in matrix:
