@@ -4,10 +4,9 @@ Displays a matrix containing integers.
 '''
 
 
-def print_matrix_integer(matrix=[[]]):
+def print_matrix(matrix=None):
+    if matrix is None:
+        matrix = [[]]
+
     for row in matrix:
-        for element in row:
-            if element != row[-1]:
-                print('{}'.format(element), end=' ')
-            else:
-                print('{}'.format(element))
+        print(' '.join("{:d}".format(element) for element in row))
