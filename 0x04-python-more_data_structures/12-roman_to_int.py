@@ -6,21 +6,12 @@ Parameters:
     roman_string (str): A string representing a Roman numeral.
 
 Returns:
-    int: The integer equivalent of the Roman numeral 
+    int: The integer equivalent of the Roman numeral
     or 0 if the input is not a valid Roman numeral.
 '''
 
 
 def roman_to_int(roman_string):
-    """
-    This function converts a Roman numeral to an integer.
-
-    Parameters:
-        roman_string (str): A string representing a Roman numeral.
-
-    Returns:
-        int: The integer equivalent of the Roman numeral or 0 if the input is not a valid Roman numeral.
-    """
     roman_nums = {
         'I': 1,
         'V': 5,
@@ -36,7 +27,8 @@ def roman_to_int(roman_string):
 
     total = 0
     for i in range(len(roman_string)):
-        if i + 1 < len(roman_string) and roman_nums[roman_string[i]] < roman_nums[roman_string[i + 1]]:
+        if i + 1 < len(roman_string) and roman_nums[roman_string[i]]
+        < roman_nums[roman_string[i + 1]]:
             total -= roman_nums[roman_string[i]]
         else:
             total += roman_nums[roman_string[i]]
