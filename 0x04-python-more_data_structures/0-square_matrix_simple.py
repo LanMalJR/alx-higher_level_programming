@@ -1,15 +1,17 @@
 #!/usr/bin/python3
+'''
+This function computes the square value of all integers of a matrix.
+The original matrix remains unchanged.
+
+Parameters:
+matrix (list of lists): A matrix of integers.
+
+Returns:
+list of lists: A new matrix where each element is the square of the corresponding element in the original matrix.
+'''
+
+
 def square_matrix_simple(matrix=[]):
-    """
-    This function computes the square value of all integers of a matrix.
-    The original matrix remains unchanged.
-
-    Parameters:
-        matrix (list of lists): A matrix of integers.
-
-    Returns:
-        list of lists: A new matrix where each element is the square of the corresponding element in the original matrix.
-    """
     # Validate the input matrix
     if not all(isinstance(row, list) for row in matrix):
         raise ValueError("Input should be a list of lists")
