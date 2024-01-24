@@ -7,7 +7,8 @@ Parameters:
 matrix (list of lists): A matrix of integers.
 
 Returns:
-list of lists: A new matrix where each element is the square of the corresponding element in the original matrix.
+list of lists: A new matrix where each element is the
+square of the corresponding element in the original matrix.
 '''
 
 
