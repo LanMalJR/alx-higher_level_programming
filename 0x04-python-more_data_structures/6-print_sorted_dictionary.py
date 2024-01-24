@@ -6,6 +6,7 @@ Parameters:
     a_dictionary (dict): A dictionary to print.
 '''
 
+
 def print_sorted_dictionary(a_dictionary):
     sortedKeys = sorted(a_dictionary.keys())
 
