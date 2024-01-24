@@ -22,24 +22,16 @@ def roman_to_int(roman_string):
         'M': 1000,
     }
 
-    currentValue = 0
-    nextValue = 0
-    sum = 0
-
-    if roman_string and type(roman_string) is str:
-        for i in range(len(roman_string)):
-            currentValue = romanNums[roman_string[i]]
-
-            if i + 1 < len(roman_string):
-                nextValue = romanNums[roman_string[i + 1]]
-            else:
-                nextValue = 0
-
-            if currentValue < nextValue:
-                sum -= currentValue
-            else:
-                sum += currentValue
-
-        return sum
-    else:
+    if not isinstance(roman_string, str) or not roman_string:
         return 0
+
+    total = 0
+    for i in range(len(roman_string)):
+        if i + 1 < len(roman_string) \
+                and roman_nums[roman_string[i]] < \
+                roman_nums[roman_string[i + 1]]:
+            total -= roman_nums[roman_string[i]]
+        else:
+            total += roman_nums[roman_string[i]]
+
+    return total
