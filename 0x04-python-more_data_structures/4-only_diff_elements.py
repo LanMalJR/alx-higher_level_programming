@@ -13,7 +13,7 @@ Returns:
 '''
 
 
-def different_elements(set_1, set_2):
+def only_diff_elements(set_1, set_2):
     diff_set = set()
 
     for element in set_1:
