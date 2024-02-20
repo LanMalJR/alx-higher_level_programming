@@ -2,6 +2,8 @@
 '''
 Generate the Pascal triangle of n rows.
 '''
+
+
 def pascal_triangle(n):
     if n <= 0:
         return []
