@@ -24,4 +24,3 @@ class MyList(list):
             None
         '''
         print(sorted(self))
-        
