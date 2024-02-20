@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-# Defines the function class_to_json, which 
+# Defines the function class_to_json, which
 converts a Python class instance to JSON format
 '''
 
