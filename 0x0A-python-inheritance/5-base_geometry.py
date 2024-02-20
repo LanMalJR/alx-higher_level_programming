@@ -9,4 +9,4 @@ class BaseGeometry:
     An empty class
     '''
     def __init__(self):
-        pass    
+        pass
