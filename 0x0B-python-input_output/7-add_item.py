@@ -4,16 +4,16 @@ Collects all arguments into a Python list,
 and subsequently stores them in a file
 '''
 
-import sys
-dumpJson = __import__('5-save_to_json_file').save_to_json_file
-loadJson = __import__('6-load_from_json_file').load_from_json_file
+from sys import argv
 
-args = sys.argv[1:]
+save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+
+load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
 try:
-    pyData = loadJson('add_item.json')
+    arglist = load_from_json_file("add_item.json")
 except FileNotFoundError:
-    pyData = []
+    arglist = []
 
-pyData.extend(args)
-dumpJson(pyData, 'add_item.json')
+arglist += argv[1:]
+save_to_json_file(arglist, "add_item.json")
