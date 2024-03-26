@@ -1,5 +1,11 @@
 USE hbtn_0c_0;
 
+-- Create the table "first_table"
+CREATE TABLE first_table (
+  id INT(11) DEFAULT NULL,
+  name VARCHAR(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- Check current character set and collation
 SHOW CREATE DATABASE hbtn_0c_0;
 SHOW CREATE TABLE first_table;
