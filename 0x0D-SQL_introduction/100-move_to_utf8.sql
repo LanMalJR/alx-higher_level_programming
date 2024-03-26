@@ -1,4 +1,4 @@
-USE hbtn_0c_0;
+--USE hbtn_0c_0;
 
 -- Check current character set and collation
 SHOW CREATE DATABASE hbtn_0c_0;
