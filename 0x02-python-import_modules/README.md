@@ -1,8 +1,13 @@
-0x02. Python - import & modules
-_______________________________________________________________________
+# 0x02. Python - import & modules
 
-1. 0. Import a simple function from a simple file -> file: 0-add.py
-2. 1. My first toolbox! -> file: 1-calculation.py
-3. 2. How to make a script dynamic! -> file: 2-args.py
-4. 3. Infinite addition -> file: 3-infinite_add.py
-5. 4. Who are you? -> file: 4-hidden_discovery.py
+## Solutions:
+### Task 1: Import a simple function from a simple file
+- **File:** `0-add.py`
+### Task 2. My first toolbox!
+- **File:** `1-calculation.py`
+### Task 3. How to make a script dynamic!
+- **File:** `2-args.py`
+### Task 4. 3. Infinite addition
+- **File:** `3-infinite_add.py`
+### Task 5. Who are you? 
+- **File:** `4-hidden_discovery.py`
