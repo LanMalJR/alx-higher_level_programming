@@ -23,7 +23,7 @@
 - **File:** `6-concat.py`
 
 ### Task 7. Copy - Cut - Paste
-- **File:** 7-edges.py
+- **File:** `7-edges.py`
 
 ### Task 8. Create a new sentence
 - **File:** `8-concat_edges.py`
