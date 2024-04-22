@@ -6,7 +6,6 @@ const strings = [
     'JavaScript is amazing'
   ];
   
-  for (let i = 0; i < strings.length; i++){
+  for (let i = 0; i < strings.length; i++) {
     console.log(strings[i]);
-  }
-  
+  }  
