@@ -18,4 +18,3 @@ function factorial (num) {
   
   const result = factorial(num);
   console.log(result);
-  
