@@ -15,3 +15,4 @@
 13. [0x0C-python-almost_a_circle](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 14. [0x0D-SQL_introduction](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 15. [0x0E-SQL_more_queries](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
+16. [0x12-javascript-warm_up](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
