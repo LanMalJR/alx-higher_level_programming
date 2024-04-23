@@ -16,3 +16,4 @@
 14. [0x0D-SQL_introduction](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 15. [0x0E-SQL_more_queries](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 16. [0x12-javascript-warm_up](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x12-javascript-warm_up)
+17. [0x13-javascript_objects_scopes_closures](https://github.com/LanMalJR/alx-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
