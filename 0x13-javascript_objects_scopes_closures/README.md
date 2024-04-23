@@ -6,7 +6,7 @@
 
 ### Task 1: Rectangle #1
 - **File:** `1-rectangle.js`
-- **Descrip*:* Write a class *Rectangle* that defines a rectangle
+- **Descrip*:** Write a class *Rectangle* that defines a rectangle
 
 ### Task 2: Rectangle #2
 - **File:** `2-rectangle.js`
