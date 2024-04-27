@@ -1,6 +1,9 @@
 # 0x0F. Python - Object-relational mapping
 
 ### Task 0: Get all states
-- **File:**
-- **Descrip:** Write a script that lists all <span style="color: #f03c15"> states </span> from the database <span style="color: pink"> hbtn_0e_0_usa: </span>
+- **File:** `0-select_states.py`
+- **Descrip:** Write a script that lists all *`states`* from the database *`hbtn_0e_0_usa:`*
+$ `\textcolor{teal}{ \text{ Eq.(3-5) states} } `$
+
+
 
