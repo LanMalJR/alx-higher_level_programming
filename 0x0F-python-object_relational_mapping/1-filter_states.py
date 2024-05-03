@@ -39,3 +39,4 @@ if __name__ == '__main__':
 
     cursor.close()
     db.close()
+
