@@ -10,33 +10,33 @@ import sys
 
 
 if __name__ == '__main__':
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    database_name = sys.argv[3]
-    host = 'localhost'
-    port = 3306
+mysql_username = sys.argv[1]
+mysql_password = sys.argv[2]
+database_name = sys.argv[3]
+host = 'localhost'
+port = 3306
 
-    db = MySQLdb.connect(
-            host=host,
-            port=port,
-            user=mysql_username,
-            passwd=mysql_password,
-            db=database_name)
+db = MySQLdb.connect(
+host=host,
+port=port,
+user=mysql_username,
+passwd=mysql_password,
+db=database_name)
 
-    cursor = db.cursor()
-    query = '''
-            SELECT *
-            FROM states
-            WHERE name
-            LIKE "N%"
-            ORDER BY states.id ASC
-            '''
+cursor = db.cursor()
+query = '''
+        SELECT *
+        FROM states
+        WHERE name
+        LIKE "N%"
+        ORDER BY states.id ASC
+        '''
 
-    cursor.execute(query)
-    results = cursor.fetchall()
+cursor.execute(query)
+results = cursor.fetchall()
 
-    for row in results:
-        print(row)
+for row in results:
+    print(row)
 
-    cursor.close()
-    db.close()
+cursor.close()
+db.close()
