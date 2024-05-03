@@ -1,45 +1,41 @@
 #!/usr/bin/python3
 '''
-This script prints all City objects from the database hbtn_0e_14_usa
+This script lists all states with a name starting with N
+from the database hbtn_0e_0_usa
 '''
 
+import MySQLdb
 import sys
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from model_state import Base, State
-from model_city import City
 
 
 if __name__ == '__main__':
-
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
     host = 'localhost'
     port = 3306
 
-    database_url = 'mysql://{}:{}@{}:{}/{}'.format(
-            mysql_username,
-            mysql_password,
-            host,
-            port,
-            database_name)
+    db = MySQLdb.connect(
+            host=host,
+            port=port,
+            user=mysql_username,
+            passwd=mysql_password,
+            db=database_name)
 
-    engine = create_engine(database_url)
-    Session = sessionmaker(bind=engine)
-    session = Session()
+    cursor = db.cursor()
+    query = '''
+            SELECT *
+            FROM states
+            WHERE name
+            LIKE "N%"
+            ORDER BY states.id ASC
+            '''
 
-    results = (
-            session.query(City, State)
-            .filter(City.state_id == State.id)
-            .order_by(City.id)
-            .all()
-            )
+    cursor.execute(query)
+    results = cursor.fetchall()
 
-    unique_results = set(results)
+    for row in results:
+        print(row)
 
-    if (unique_results):
-        for city, state in results:
-            print('{}: ({}) {}'.format(state.name, city.id, city.name))
-
-    session.close()
+    cursor.close()
+    db.close()
