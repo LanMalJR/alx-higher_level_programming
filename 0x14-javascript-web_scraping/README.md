@@ -26,3 +26,11 @@
 ### Task 6: How many completed?
 - **File:** `6-completed_tasks.js`
 - **Description:** Write a script that computes the number of tasks completed by user id.
+
+### Task 7: Who was playing in this movie?
+- **File:** `100-starwars_characters.js`
+- **Description:** Write a script that prints all characters of a Star Wars movie:
+
+### Task 8: Right order
+- **File:** `101-starwars_characters.js`
+- **Description:** Write a script that prints all characters of a Star Wars movie:
